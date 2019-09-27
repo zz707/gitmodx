@@ -15,7 +15,7 @@ $modx->setLogLevel(MODX_LOG_LEVEL_INFO);
 
 $firstTemplate = $modx->getObject('modTemplate',1);
 
-$files = glob(dirname(dirname(__FILE__)).'/elements/templates/*.tpl');
+$files = glob(MODX_BASE_PATH.'elements/templates/*.tpl');
 $indexWasSaved = false;
 foreach($files as $file)
 {
